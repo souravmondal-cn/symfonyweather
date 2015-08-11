@@ -10,7 +10,7 @@ class weatherActions extends sfActions {
 
         $this->getResponse()->setContentType('application/json');
 
-        $city = $request->getParameter('city');
+        $city = str_replace(" ", "_", $request->getParameter('city'));
 
         if (empty($city)) {
             return $this->renderText(json_encode('false'));
