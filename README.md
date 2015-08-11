@@ -13,7 +13,10 @@ Requirements
 ------------
 -   Minimum PHP Version: 5.3
 
+
+
 Setup Config:
+--------------
 
 - create a localconfig file named localConfig.php inside the web dir.
 
