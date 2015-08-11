@@ -10,7 +10,7 @@ $('.getWeather').click(function (event) {
     }
 
     $.ajax({
-        url: '/weather/GetWeather',
+        url: baseUrl + '/weather/GetWeather',
         type: 'GET',
         dataType: 'json',
         data: {
