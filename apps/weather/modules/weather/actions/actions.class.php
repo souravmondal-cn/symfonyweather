@@ -26,7 +26,7 @@ class weatherActions extends sfActions {
         $context = stream_context_create($opts);
         $weatherApiUrl = "http://api.openweathermap.org/data/2.5/weather?q=$city&units=metric";
         $weatherApiResponse = json_decode(file_get_contents($weatherApiUrl, false, $context));
-        //print_r($weatherApiResponse);
+
 
         if ($weatherApiResponse->cod == 404) {
             return $this->renderText(json_encode('not_found'));
