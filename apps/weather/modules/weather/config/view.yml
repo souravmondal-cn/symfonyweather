@@ -1,0 +1,4 @@
+# apps/weather/modules/weather/config/view.yml
+indexSuccess:
+  stylesheets: [main.css]
+  javascripts:    [application.js]
